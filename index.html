@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitta Command - Automatize Suas Vendas</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #1e1e2f; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center; margin: 0; }
+        input[type="email"] { padding: 10px; width: 250px; border: none; border-radius: 5px; margin-right: 10px; }
+        button { padding: 10px 20px; background-color: #6a5acd; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #5848c2; }
+        .footer { position: absolute; bottom: 20px; font-size: 0.9em; color: #aaa; }
+    </style>
+</head>
+<body>
+    <h1>Automatize Suas Vendas com um Simples Comando de Voz!</h1>
+    <p>Conheça o <strong>Vitta Command</strong>, o app que transforma sua rotina de vendas no Mercado Livre, Amazon e Magalu.</p>
+    <form id="mc-form">
+        <input type="email" id="email" placeholder="Digite seu e-mail" required>
+        <button type="submit">Quero Acessar</button>
+    </form>
+    <div class="footer">© 2025 Vitta Command.</div>
+
+    <script>
+        document.getElementById('mc-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            alert('Obrigado por se cadastrar! Em breve você receberá novidades.');
+        });
+    </script>
+</body>
+</html>
